@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ro">
 
 <head>
   <meta charset="utf-8">
@@ -13,24 +13,26 @@
 
   <div class="container py-5">
     <h2 class="text-center mb-4">Trellum</h2>
-
-    <!-- Search task and Add task -->
+    <p class="text-center text-muted mb-5">
+      🔄 Poți muta task-urile între coloane prin <strong>drag & drop</strong>.
+    </p>
+    <!-- Search task si Add task -->
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="mb-4 d-flex">
           <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addTaskModal">
-            Add task
+            Adauga Task
           </button>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="mb-4 d-flex justify-content-md-end justify-content-start">
-          <input type="text" class="form-control search-input" id="searchInput" placeholder="Search by title...">
+          <input type="text" class="form-control search-input" id="searchInput" placeholder="Cauta taskuri dupa titlu...">
         </div>
       </div>
     </div>
 
-    <!-- Show tasks -->
+    <!-- Afisare tasks -->
     <div class="row">
       {% for status, tasks in tasks_by_status.items() %}
       <div class="col-md-3">
@@ -38,7 +40,7 @@
           <div class="card-header bg-secondary text-white text-center">{{ status }}</div>
           <div class="card-body" id="{{ status.replace(' ', '_') }}" data-status="{{ status }}" style="min-height: 200px;">
             {% for task in tasks %}
-            <div class="mb-3 border rounded p-2 bg-light task-card" data-id="{{ task.id }}" data-title="{{ task.title }}" data-description="{{ task.description }}" data-bs-toggle="modal" data-bs-target="#viewTaskModal">
+            <div class="mb-3 border rounded user-select-none cursor-pointer p-2 bg-light task-card" data-id="{{ task.id }}" data-title="{{ task.title }}" data-description="{{ task.description }}" data-bs-toggle="modal" data-bs-target="#viewTaskModal">
               <strong>{{ task.title }}</strong>
             </div>
             {% endfor %}
@@ -50,34 +52,34 @@
   </div>
 
 
-  <!-- Modal Add Task -->
+  <!-- Modal Adaugare Task -->
   <div class="modal fade" id="addTaskModal" tabindex="-1" aria-labelledby="addTaskModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <form method="POST" class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="addTaskModalLabel">Add new task</h5>
+          <h5 class="modal-title" id="addTaskModalLabel">Adauga un nou task</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Închide"></button>
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
+            <label for="title" class="form-label">Titlu</label>
             <input type="text" class="form-control" name="title" id="title" required>
           </div>
           <div class="mb-3">
-            <label for="description" class="form-label">Description</label>
+            <label for="description" class="form-label">Descriere</label>
             <textarea class="form-control" name="description" id="description" rows="3"></textarea>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary">Save</button>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Salveaza</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anulează</button>
         </div>
       </form>
     </div>
   </div>
 
 
-  <!-- Modal Vizualization / Edit Task -->
+  <!-- Modal Vizualizare / Editare Task -->
   <div class="modal fade" id="viewTaskModal" tabindex="-1" aria-labelledby="viewTaskModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <form method="POST" action="/edit_task" id="editForm" class="modal-content">
@@ -92,8 +94,8 @@
           </div>
         </div>
         <div class="modal-footer">
-          <a id="modalDeleteLink" href="#" class="btn btn-danger">Delete</a>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <a id="modalDeleteLink" href="#" class="btn btn-danger">Șterge</a>
+          <button type="submit" class="btn btn-primary">Salvează modificările</button>
         </div>
       </form>
     </div>

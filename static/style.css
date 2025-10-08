@@ -5,6 +5,10 @@ body {
   margin-top: 50px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .card {
   min-height: 500px;
 }
