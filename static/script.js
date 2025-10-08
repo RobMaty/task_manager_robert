@@ -1,4 +1,4 @@
-// Coloanele pentru statusuri
+// Collums for status
 const statusColumns = ["Backlog", "In Progress", "QA", "Done"];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // JS pentru popularea modalului la click pe un task
+  // JS for adding tasks on a click for modal
   const cards = document.querySelectorAll(".task-card");
   cards.forEach((card) => {
     card.addEventListener("click", () => {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  // Căutare frontend
+  // Search frontend
   const searchInput = document.getElementById("searchInput");
   searchInput.addEventListener("input", () => {
     const term = searchInput.value.toLowerCase();

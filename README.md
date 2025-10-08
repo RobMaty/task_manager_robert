@@ -107,6 +107,17 @@ Placeholder and input text are legible and well-spaced.
 - QA
 - Done
 
+## 🖼️ Screenshots for the app functionality 
+
+### Task Log
+![Task Log](Task_log.png)
+
+### Add task
+![Add task](Add_task.png)
+
+### Edit task
+![Edit task](Edit_task.png)
+
 ### 💾 Local Storage Options (In-memory or SQLite database support)
 ### 🔁 Tasks retain their status after page refresh
 

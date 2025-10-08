@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ro">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -14,9 +14,9 @@
   <div class="container py-5">
     <h2 class="text-center mb-4">Trellum</h2>
     <p class="text-center text-muted mb-5">
-      🔄 Poți muta task-urile între coloane prin <strong>drag & drop</strong>.
+      🔄 You can move the task in between the collums with <strong>drag & drop</strong>.
     </p>
-    <!-- Search task si Add task -->
+    <!-- Search task and Add task -->
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="mb-4 d-flex">
@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <!-- Afisare tasks -->
+    <!-- Show tasks -->
     <div class="row">
       {% for status, tasks in tasks_by_status.items() %}
       <div class="col-md-3">
@@ -52,7 +52,7 @@
   </div>
 
 
-  <!-- Modal Adaugare Task -->
+  <!-- Modal Add Task -->
   <div class="modal fade" id="addTaskModal" tabindex="-1" aria-labelledby="addTaskModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <form method="POST" class="modal-content">
@@ -79,7 +79,7 @@
   </div>
 
 
-  <!-- Modal Vizualizare / Editare Task -->
+  <!-- Modal Vizualization / Edit Task -->
   <div class="modal fade" id="viewTaskModal" tabindex="-1" aria-labelledby="viewTaskModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <form method="POST" action="/edit_task" id="editForm" class="modal-content">
