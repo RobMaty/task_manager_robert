@@ -10,12 +10,24 @@ The goal of this project is to provide a simple yet powerful interface for manag
 
 ## 🔧 Installation
 
-### 1. Clone the Repository (Example)
+## 🚀 Deployment
 
-```bash
-git clone https://github.com/username/flask-task-manager.git
-cd flask-task-manager
-```
+This project — **task_manager_robert** — is hosted on **Render** and the source code is available on GitHub.
+
+🔗 **Live Deployment:** [https://task-manager-robert-5gqe.onrender.com/](https://task-manager-robert-5gqe.onrender.com/)  
+💻 **GitHub Repository:** [https://github.com/RobMaty/task_manager_robert](https://github.com/RobMaty/task_manager_robert)
+
+---
+
+### 🧩 Local Deployment
+
+To run this project locally on your own machine:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/task_manager_robert.git
+   cd task_manager_robert
+
 
 ### 2. Create and Activate a Virtual Environment
 
