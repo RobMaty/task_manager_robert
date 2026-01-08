@@ -1,5 +1,7 @@
 # 📝 Flask Task Manager
 
+![](appformat.png)
+
 A simple Task Manager built with Flask. You can create, edit, delete, and move tasks between different statuses (`To Do`, `In Progress`, `Done`) using **drag and drop**.
 
 ## 🎯 Project Purpose
