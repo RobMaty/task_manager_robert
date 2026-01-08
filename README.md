@@ -130,6 +130,33 @@ Placeholder and input text are legible and well-spaced.
 ### Edit task
 ![Edit task](Edit_task.png)
 
+## Design
+
+### Wireframes
+
+All wireframes were created using Figma. Here are the models for the Main page and Add task.
+
+![Main Page](mainpage.png)
+
+![add task Page](addtask.png)
+
+
+## DevTools
+
+### Lighthouse results
+
+!(light1.png)
+!(light2.png)
+!(light3.png)
+!(light4.png)
+
+### Validator Testing
+- **HTML** - Validated with W3C Markup Validator.
+![Validator](html-validator.png "HTML")
+
+- **CSS** - Checked using W3C CSS Validator.
+![Validator](css-validator.png "CSS")
+
 ### 💾 Local Storage Options (In-memory or SQLite database support)
 ### 🔁 Tasks retain their status after page refresh
 
