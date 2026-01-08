@@ -145,10 +145,10 @@ All wireframes were created using Figma. Here are the models for the Main page a
 
 ### Lighthouse results
 
-!(light1.png)
-!(light2.png)
-!(light3.png)
-!(light4.png)
+![light](light1.png)
+![light](light2.png)
+![light](light3.png)
+![light](light4.png)
 
 ### Validator Testing
 - **HTML** - Validated with W3C Markup Validator.
